@@ -55,7 +55,7 @@
   }
 
   .header nav {
-    flex-direction: column; /* Stack navigation links */
+    flex-direction: column;
     gap: 10px;
   }
 
