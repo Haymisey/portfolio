@@ -14,7 +14,6 @@ import {
   ChevronDown,
   Code,
   Database,
-  Smartphone,
   Brain,
   Server,
   Layout,
@@ -24,6 +23,8 @@ import {
   BarChart3,
   Menu,
   X,
+  Layers, 
+  Smartphone,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -54,19 +55,36 @@ export default function Portfolio() {
     { name: "CSS", icon: Palette },
     { name: "JavaScript", icon: Code },
     { name: "React", icon: Layout },
+    { name: "Flutter", icon: Smartphone },
+    { name: "Jetpack Compose", icon: Layers },
     { name: "Svelte", icon: Zap },
     { name: "Node.js", icon: Server },
     { name: "NestJS", icon: Server },
     { name: "MongoDB", icon: Database },
     { name: "Supabase", icon: Database },
     { name: "Firebase", icon: Database },
-    { name: "Flutter", icon: Smartphone },
     { name: "Python", icon: Code },
     { name: "TensorFlow", icon: Brain },
     { name: "Machine Learning", icon: BarChart3 },
   ]
 
   const projects = [
+    {
+      title: "Lab Result Viewer (Flutter)",
+      description:
+        "Mobile health-tech application connecting lab technicians with patients remotely. Developed the frontend user interface using Flutter and Dart, integrated with backend APIs built in NestJS. Wrote integration tests to verify key workflows and ensure feature stability.",
+      tech: ["Flutter", "Dart", "Material UI", "NestJS", "API Integration"],
+      type: "Team Collaboration",
+      githubUrl: "https://github.com/Haymisey/lab_result_viewer_Flutter",
+    },
+    {
+      title: "Lab Result Viewer (Jetpack Compose)",
+      description:
+        "Alternative implementation of the Lab Result Viewer using Jetpack Compose with Kotlin. Developed the frontend user interface and integrated it with backend APIs built in NestJS. Implemented MVVM architecture with ViewModels for state management.",
+      tech: ["Jetpack Compose", "Kotlin", "MVVM", "NestJS", "API Integration"],
+      type: "Team Collaboration",
+      githubUrl: "https://github.com/Haymisey/lab_result_viewer_Compose",
+    },
     {
       title: "AI-Powered Health Assistant",
       description:
@@ -276,7 +294,7 @@ export default function Portfolio() {
                 className="rounded-full bg-transparent"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1IgiCsnimVQc7MKFxcVjZLbuBmxH0NCN9/view?usp=sharing",
+                    "https://drive.google.com/file/d/1XCl2eJ3MQmhV1znkBrlJdus0FaesvIxz/view?usp=sharing",
                     "_blank",
                   )
                 }
